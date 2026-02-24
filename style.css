@@ -1,0 +1,92 @@
+:root {
+  --skeleton: palevioletred;
+}
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: lavender;
+}
+.screen {
+  border: 2px solid black;
+  height: 360px; /* 360, 480 */
+  width: 480px;
+  background-image: url("https://i.pinimg.com/736x/86/d2/32/86d2320dc91cfdf91a55a17f55c94a92.jpg");
+}
+.menuScene {
+  display: grid;
+  grid-auto-columns: 150px;
+  grid-auto-rows: 150px;
+  place-content: center;
+  grid-template-areas:
+    "slot-1 slot-2 slot-3"
+    "slot-4 slot-5 slot-6";
+}
+.slot {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 1em;
+  text-align: center;
+  align-content: center;
+  transition: transform 0.5s;
+  box-shadow: 5px 2.5px 2.5px rgba(192, 192, 192, 0.5);
+}
+.techstack {
+  height: 60px;
+  background-color: gray;
+  opacity: 0.5;
+  display: grid;
+  grid-template-areas: "html5 css js py bench";
+  place-items: center;
+}
+.fa-brands,
+.fa-solid {
+  font-size: 2rem;
+  color: white;
+  transition: transform 0.5s;
+}
+.is-hovered {
+  color: rgb(108, 233, 63);
+  transform: scale(1.2, 1.2);
+}
+.slot:hover {
+  transform: scale(1.1, 1.1);
+}
+#game1 {
+  background-image: url("https://skzpd.com/skzpd_logo.png");
+  background-size: cover;
+}
+#game2 {
+  background-color: var(--skeleton);
+}
+#game3 {
+  background-color: var(--skeleton);
+}
+#game4 {
+  background-color: var(--skeleton);
+}
+#game5 {
+  background-color: var(--skeleton);
+}
+#game6 {
+  background-color: var(--skeleton);
+}
+.hide {
+  display: none;
+}
+.show {
+  display: grid;
+}
+#game1Scene,
+#game2Scene,
+#game3Scene,
+#game4Scene,
+#game5Scene,
+#game6Scene {
+  place-content: center;
+}
+button {
+  cursor: pointer;
+}
