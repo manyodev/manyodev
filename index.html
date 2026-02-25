@@ -10,54 +10,102 @@
     <script src="script.js" defer></script>
     <title>My Portfolio</title>
   </head>
-  <body class="body">
-    <div class="screen" id="menuScreen">
-      <div class="menuScene">
-        <button class="slot" style="slot-1" id="game1"></button>
-        <button class="slot" style="slot-2" id="game2">
-          Blog (Coming Soon...)
-        </button>
-        <button class="slot" style="slot-3" id="game3">Stay tuned !</button>
-        <button class="slot" style="slot-4" id="game4">Stay tuned !</button>
-        <button class="slot" style="slot-5" id="game5">Stay tuned !</button>
-        <button class="slot" style="slot-6" id="game6">Stay tuned !</button>
+  <body>
+    <main>
+      <div class="screen-container">
+        <div class="screen" id="menuScreen">
+          <div class="pfp"></div>
+
+          <div class="name">Manyo (mon-yo)</div>
+          <div class="sum">Indie Web Developer.</div>
+          <div class="socials">
+            <div class="tech">
+              <button class="item github">
+                <i class="fa-brands fa-github"></i>
+                <div class="itemName">GitHub</div>
+              </button>
+            </div>
+            <div class="tech">
+              <button class="item leetcode">
+                <i class="fa-simple-icons fa-leetcode"></i>
+                <div class="itemName">Leetcode</div>
+              </button>
+            </div>
+            <div class="tech">
+              <button class="item linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+                <div class="itemName">LinkedIn</div>
+              </button>
+            </div>
+            <div class="tech">
+              <button class="item email">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="itemName">Email</div>
+              </button>
+            </div>
+            <div class="tech">
+              <button class="item khan">
+                <i class="fa-brands fa-khan-academy"></i>
+                <div class="itemName">Khan Academy</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Game 1-->
+        <div class="screen hide" id="game1Scene">
+          <button id="toMenu">Back to Menu</button>
+          <p>My first passion project.</p>
+        </div>
+        <!-- Game 2-->
+        <div class="screen hide" id="game2Scene">
+          <button id="toMenu2">Back to Menu</button>
+        </div>
+        <!-- Game 3-->
+        <div class="screen hide" id="game3Scene">
+          <button id="toMenu3">Back to Menu</button>
+        </div>
+        <!-- Game 4-->
+        <div class="screen hide" id="game4Scene">
+          <button id="toMenu4">Back to Menu</button>
+        </div>
+        <!-- Game 5-->
+        <div class="screen hide" id="game5Scene">
+          <button id="toMenu5">Back to Menu</button>
+        </div>
+        <!-- Game 6-->
+        <div class="screen hide" id="game6Scene">
+          <button id="toMenu6">Back to Menu</button>
+        </div>
       </div>
-      <div class="techstack">
-        <i class="fa-brands fa-html5" style="html5"></i>
 
-        <i class="fa-brands fa-css" style="css"></i>
-
-        <i class="fa-brands fa-js" style="js"></i>
-
-        <i class="fa-brands fa-python" style="py"></i>
-
-        <i class="fa-solid fa-chair" stylel="bench"></i>
+      <!-- Projects -->
+      <div class="screen">
+        <div class="projects">
+          <button class="slot" style="grid-area: slot-1" id="game1"></button>
+          <button class="slot" style="grid-area: slot-2" id="game2">
+            Blog (Coming Soon...)
+          </button>
+          <button class="slot" style="grid-area: slot-3" id="game3">
+            Stay tuned !
+          </button>
+          <button class="slot" style="grid-area: slot-4" id="game4">
+            Stay tuned !
+          </button>
+          <button class="slot" style="grid-area: slot-5" id="game5">
+            Stay tuned !
+          </button>
+          <button class="slot" style="grid-area: slot-6" id="game6">
+            Stay tuned !
+          </button>
+        </div>
+        <div class="techstack">
+          <i class="fa-brands fa-html5" style="grid-area: html5"></i>
+          <i class="fa-brands fa-css" style="grid-area: css"></i>
+          <i class="fa-brands fa-js" style="grid-area: js"></i>
+          <i class="fa-brands fa-python" style="grid-area: py"></i>
+          <i class="fa-solid fa-chair" style="grid-area: bench"></i>
+        </div>
       </div>
-    </div>
-    <!-- Game 1-->
-    <div class="screen hide" id="game1Scene">
-      <button id="toMenu">Back to Menu</button>
-      <p>My first passion project.</p>
-    </div>
-    <!-- Game 2-->
-    <div class="screen hide" id="game2Scene">
-      <button id="toMenu2">Back to Menu</button>
-    </div>
-    <!-- Game 3-->
-    <div class="screen hide" id="game3Scene">
-      <button id="toMenu3">Back to Menu</button>
-    </div>
-    <!-- Game 4-->
-    <div class="screen hide" id="game4Scene">
-      <button id="toMenu4">Back to Menu</button>
-    </div>
-    <!-- Game 5-->
-    <div class="screen hide" id="game5Scene">
-      <button id="toMenu5">Back to Menu</button>
-    </div>
-    <!-- Game 6-->
-    <div class="screen hide" id="game6Scene">
-      <button id="toMenu6">Back to Menu</button>
-    </div>
+    </main>
   </body>
 </html>
