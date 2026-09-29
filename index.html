@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>My Portfolio</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="screen-container">
+        <div class="screen" id="menuScreen">
+          <div class="pfp"></div>
+          <div class="info">
+            <p>
+              Computer Science Junior, open to work, freelance, or collaborate.
+            </p>
+          </div>
+          <div class="name">Manyo</div>
+          <div class="sum">Frontend Web Developer</div>
+          <div class="socials">
+            <!---->
+            <div class="tech">
+              <a href="https://github.com/manyodev" target="_blank">
+                <button class="item">
+                  <i class="fa-brands fa-github"></i>
+                  <div class="itemName">GitHub</div>
+                </button></a
+              >
+            </div>
+            <div class="tech">
+              <a href="https://github.com/manyodev" target="_blank">
+                <button class="item">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <div class="itemName">LinkedIn</div>
+                </button></a
+              >
+            </div>
+            <div class="tech">
+              <a href="https://www.youtube.com/@manyodev" target="_blank">
+                <button class="item">
+                  <i class="fa-brands fa-youtube"></i>
+                  <div class="itemName">YouTube</div>
+                </button></a
+              >
+            </div>
+
+            <div class="tech">
+              <div class="tooltip">
+                <button class="item" id="emailBtn">
+                  <input type="text" value="manyodev@outlook.com" id="email" />
+                  <i class="fa-solid fa-envelope"></i>
+                  <div class="itemName">
+                    <span class="tooltiptext" id="myTooltip"
+                      >Copy to clipboard</span
+                    >Email
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Game 1-->
+        <div class="screen hide" id="game1Scene">
+          <button id="toMenu"><i class="fa-solid fa-arrow-left"></i></button>
+          <a href="https://skzpd.com/src/index.html" target="_blank"><img src="images/skzpdPreview.png"></a>
+          <p><b>SKZPD (Stray Kids Photocard Database)</b> is a passion project born from my hobby of collecting photocards (collectible items in K-Pop). While looking for online sources to cross-reference my physical collection with, I thought "I wish something that made this easier existed". I realized that it could exist and that I could make it myself.</p>
+        </div>
+        <!-- Game 2-->
+        <div class="screen hide" id="game2Scene">
+          <button id="toMenu2"><i class="fa-solid fa-arrow-left"></i></button>
+          <a href="https://manyodev.github.io/HalliGalli/" target="_blank"
+              ><img src="images/halligalli.png" /></a>
+
+          <p>
+            My final project for Harvard's CS50P (CS50's Introduction to
+            Programming with Python), is a recreation of <b>Halli Galli</b>, a classic Korean
+            card game. The 100% python code is on my GitHub! You can click above to play a
+            live demo on the web.
+          </p>
+        </div>
+        <!-- Game 3-->
+        <div class="screen hide" id="game3Scene">
+          <button id="toMenu3"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+        <!-- Game 4-->
+        <div class="screen hide" id="game4Scene">
+          <button id="toMenu4"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+        <!-- Game 5-->
+        <div class="screen hide" id="game5Scene">
+          <button id="toMenu5"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+        <!-- Game 6-->
+        <div class="screen hide" id="game6Scene">
+          <button id="toMenu6"><i class="fa-solid fa-arrow-left"></i></button>
+          <div class="game6page1">
+            <p>Formal Education</p>
+            <table>
+              <tr>
+                <th>Degree</th>
+                <th>Program</th>
+                <th>School</th>
+                <th>Completed</th>
+              </tr>
+              <tr>
+                <td>B.S.</td>
+                <td>Computer Science</td>
+                <td>Florida Atlantic University</td>
+                <td>2028</td>
+              </tr>
+            </table>
+            <button id="toGame6Page2">See Courses Taken</button>
+            <p>Audited Courses</p>
+            <table>
+              <tr>
+                <th>Course</th>
+                <th>Source</th>
+                <th>Completed</th>
+              </tr>
+              <tr>
+                <td>CS50X</td>
+                <td>HarvardX</td>
+                <td>In Progress</td>
+              </tr>
+              <tr>
+                <td>CS50P</td>
+                <td>HarvardX</td>
+                <td>September, 2026</td>
+              </tr>
+            </table>
+          </div>
+          <div class="game6page2 hide">
+            <p>Courses Taken</p>
+            <p>
+              Not all courses I've taken are here, just ones I want to
+              highlight.
+            </p>
+            <table>
+              <tr>
+                <th>Year</th>
+                <th>Course</th>
+                <th>Title</th>
+              </tr>
+              <tr>
+                <td>Fall 26</td>
+                <td>MAC 2311</td>
+                <td>Calculus Analytic Geometry 1</td>
+              </tr>
+              <tr>
+                <td>Fall 26</td>
+                <td>CEN 3062C</td>
+                <td>Intro to Software Design</td>
+              </tr>
+              <tr>
+                <td>Summer 25</td>
+                <td>COP 3035C</td>
+                <td>Intro to Programming in Python</td>
+              </tr>
+              <tr>
+                <td>Summer 25</td>
+                <td>COT 2000</td>
+                <td>Foundations Of Computing</td>
+              </tr>
+              <tr>
+                <td>Spring 25</td>
+                <td>COP 1000</td>
+                <td>Intro to Programming</td>
+              </tr>
+              <tr>
+                <td>Spring 25</td>
+                <td>CGS 1100</td>
+                <td>Microcomputer Applications</td>
+              </tr>
+              <tr>
+                <td>Spring 25</td>
+                <td>HSC 2140</td>
+                <td>Drug Education</td>
+              </tr>
+              <tr>
+                <td>Fall 24</td>
+                <td>BSC 1010/L</td>
+                <td>Principles of Biology 1 w/ Lab</td>
+              </tr>
+              <tr>
+                <td>Fall 24</td>
+                <td>CHM 1045/L</td>
+                <td>General Chemistry 1 w/ Lab</td>
+              </tr>
+              <tr>
+                <td>Fall 24</td>
+                <td>PSY 2012</td>
+                <td>Introduction to Psychology</td>
+              </tr>
+              <tr>
+                <td>Fall 24</td>
+                <td>STA 2023</td>
+                <td>Statistics</td>
+              </tr>
+            </table>
+            <button id="toGame6Page1">Back to Education</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="screen">
+        <div class="projects">
+          <button class="slot" style="grid-area: slot-1" id="game1"></button>
+          <button class="slot" style="grid-area: slot-2" id="game2">
+            Halli Galli
+          </button>
+          <button class="slot" style="grid-area: slot-3" id="game3">
+            (Coming Soon...)
+          </button>
+          <button class="slot" style="grid-area: slot-4" id="game4">
+            (Coming Soon...)
+          </button>
+          <button class="slot" style="grid-area: slot-5" id="game5">
+            (Coming Soon...)
+          </button>
+          <button class="slot" style="grid-area: slot-6" id="game6">
+            Education !
+          </button>
+        </div>
+        <div class="techstack">
+          <i class="fa-brands fa-html5" style="grid-area: html5"></i>
+          <i class="fa-brands fa-css" style="grid-area: css"></i>
+          <i class="fa-brands fa-js" style="grid-area: js"></i>
+          <i class="fa-brands fa-python" style="grid-area: py"></i>
+          <img class="cpp" style="grid-area: cpp" src="images/cpp.png"/>
+          <img class="cpp cppHover" style="grid-area: cpp" src="images/cppHover.png"/>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

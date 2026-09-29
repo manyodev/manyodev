@@ -1,0 +1,344 @@
+:root {
+  --text-color: #fff;
+  --bg-color: #3e1e35;
+  --primary: #ee53d2;
+  --secondary: #6ce93f;
+  --accent: #ba0bf4;
+  --skeleton: palevioletred;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--bg-color);
+}
+main {
+  margin: 20px;
+  border-bottom: 25px solid var(--primary);
+}
+.screen {
+  border: 2px solid var(--primary);
+  height: 360px; /* 360, 480 */
+  width: 480px;
+  background-color: var(--bg-color);
+  border-left: 25px solid var(--primary);
+  border-right: 25px solid var(--primary);
+  border-top: 25px solid var(--primary);
+  border-bottom: 5px solid var(--primary);
+}
+.screen > img {
+  width: auto;
+  height: 180px;
+  justify-self: center;
+}
+.screen > a {
+  justify-self: center;
+}
+a > img {
+  width: auto;
+  height: 180px;
+  justify-self: center;
+  transition: transform 0.5s;
+}
+a > img:hover {
+transform: scale(1.1, 1.1);
+}
+a:link {
+  color: var(--accent);
+}
+.screen > a:visited {
+  color: var(--accent);
+}
+.screen > a:hover {
+  color: var(--accent);
+}
+.screen > a:active {
+  color: var(--accent);
+}
+.screen-container {
+  position: relative;
+  width: 480px;
+  height: 360px;
+}
+.screen-container .screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.projects {
+  display: grid;
+  grid-auto-columns: 150px;
+  grid-auto-rows: 150px;
+  place-content: center;
+  grid-template-areas:
+    "slot-1 slot-2 slot-3"
+    "slot-4 slot-5 slot-6";
+  background-image: url("https://i.pinimg.com/736x/86/d2/32/86d2320dc91cfdf91a55a17f55c94a92.jpg");
+}
+.slot {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 1em;
+  text-align: center;
+  align-content: center;
+  transition: transform 0.5s;
+  box-shadow: 5px 2.5px 2.5px rgba(192, 192, 192, 0.5);
+}
+.techstack {
+  height: 60px;
+  background-color: gray;
+  display: grid;
+  grid-template-areas: "html5 css js py cpp";
+  place-items: center;
+}
+.fa-html5,
+.fa-css,
+.fa-js,
+.fa-python
+{
+  font-size: 2rem;
+  color: white;
+  transition: transform 0.5s;
+}
+.cpp, .cppHover {
+max-width: 30px;
+transition: transform 0.5s;
+}
+.cppHover {
+  opacity: 0;
+}
+.fa-arrow-left {
+  color: var(--primary);
+  padding: 0;
+}
+.screen > button {
+  padding: 0;
+  margin: 2px;
+  border: none;
+  background: transparent;
+  display: flex;
+  justify-content: left;
+}
+.screen > p {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.is-hovered {
+  color: rgb(108, 233, 63);
+  transform: scale(1.2, 1.2);
+  opacity: 1;
+}
+.slot:hover {
+  transform: scale(1.1, 1.1);
+}
+#game1 {
+  background-color: var(--skeleton);
+  background-image: url(images/skzpd_logo.png);
+  background-position: center;
+  background-size: cover;
+}
+#game2 {
+  background-color: var(--skeleton);
+  background-image: url(images/halligalli.jpg);
+  background-position: center;
+  background-size: cover;
+  font-weight: bold;
+}
+
+#game3 {
+  background-color: var(--skeleton);
+}
+#game4 {
+  background-color: var(--skeleton);
+}
+#game5 {
+  background-color: var(--skeleton);
+}
+#game6 {
+  background-color: var(--skeleton);
+  background-image: url(images/luna.jpeg);
+  background-position: center;
+  background-size: cover;
+  color: var(--bg-color);
+  font-weight: bold;
+  text-shadow: 
+    -1px -1px 0 #fff,  
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
+}
+.game6page2 {
+  overflow-y: auto;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: grid;
+}
+#menuScreen.hide {
+  display: none;
+}
+#menuScreen.show {
+  display: grid;
+}
+#game1Scene,
+#game2Scene,
+#game3Scene,
+#game4Scene,
+#game5Scene,
+#game6Scene {
+  place-content: center;
+  background-image: url("https://i.pinimg.com/736x/86/d2/32/86d2320dc91cfdf91a55a17f55c94a92.jpg");
+}
+button {
+  cursor: pointer;
+}
+.top {
+  border: 2px solid black;
+  height: 360px; /* 360, 480 */
+  width: 480px;
+  background-image: url("https://i.pinimg.com/736x/86/d2/32/86d2320dc91cfdf91a55a17f55c94a92.jpg");
+}
+#menuScreen {
+  color: white;
+  display: grid;
+  grid-auto-columns: 120px 120px 120px 120px;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "box-1 box-1 box-2 box-2"
+    "box-1 box-1 box-3 box-3"
+    "box-1 box-1 box-3 box-3"
+    "box-5 box-5 box-3 box-3"
+    "box-4 box-4 box-4 box-4";
+}
+.pfp {
+  grid-area: box-1;
+  background-color: var(--skeleton);
+  background-image: url(images/chibiusa.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-right: 2px solid var(--secondary);
+  border-bottom: 2px solid var(--secondary);
+  border-radius: 12px;
+  margin: 8px;
+}
+.info {
+  grid-area: box-5;
+  font-size: 1rem;
+  border: 0px solid white;
+  margin-left: 0.5rem;
+}
+.name {
+  grid-area: box-2;
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 8px;
+  margin: 8px;
+}
+.sum {
+  grid-area: box-3;
+  text-align: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 8px;
+}
+.socials {
+  grid-area: box-4;
+  display: grid;
+  grid-auto-columns: 80px;
+  grid-auto-rows: 80px;
+  grid-template-areas: "sns1 sns2 sns3 sns4";
+  justify-content: space-evenly;
+  background-color: var(--bg-color);
+  place-items: center;
+}
+.tech {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.item {
+  width: 100%;
+  margin: 0;
+  height: 70%;
+  background-color: black;
+  border-left: 1px solid var(--accent);
+  border-top: 1px solid var(--accent);
+  border-right: 1px solid var(--secondary);
+  border-bottom: 1px solid var(--secondary);
+}
+.fa-github,
+.fa-linkedin,
+.fa-codepen,
+.fa-youtube,
+.fa-envelope,
+.fa-spa {
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--secondary);
+}
+.item i {
+  width: 100%;
+  height: 100%;
+}
+.tech:hover {
+  transform: scale(1.25, 1.25) translateY(-8px);
+}
+.itemName {
+  width: 100%;
+  color: white;
+}
+#email {
+  display: none;
+}
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: var(--primary);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+table,
+th,
+td {
+  background-color: white;
+  border: 1px solid black;
+}
