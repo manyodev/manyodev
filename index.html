@@ -31,7 +31,13 @@
     </div>
     <main class="projects-page">          <div class="projects-page2"> <div class="screen-container">
         <div class="screen" id="menuScreen">
-          <div class="color pfp"></div><div class="name">Manyo</div><p>Frontend Web Developer & Computer Science Junior</p>
+          <div
+          class="color pfp"
+          data-copy="manyodev@outlook.com"
+          role="button"
+          tabindex="0"
+          aria-label="Copy email"
+        ></div><div id="copy-tooltip" role="status" aria-live="polite"></div><div class="name">Manyo</div><p>Frontend Web Developer & Computer Science Junior</p>
         </div>
         <!-- Game 1-->
         <div class="screen hide" id="game1Scene">
@@ -120,6 +126,36 @@
             src="images/cppHover.png"
           />
         </div>
-      </div></main></div>
+      </div></main></div>    <script>
+      const copyTooltip = document.querySelector("#copy-tooltip");
+      let tooltipTimeout;
+
+      document
+        .querySelectorAll(".color[data-copy]")
+        .forEach((color) => {
+          const copyText = async () => {
+            try {
+              await navigator.clipboard.writeText(color.dataset.copy);
+              copyTooltip.textContent = `Copied ${color.dataset.copy} to clipboard!`;
+              copyTooltip.classList.add("visible");
+              clearTimeout(tooltipTimeout);
+              tooltipTimeout = setTimeout(() => {
+                copyTooltip.classList.remove("visible");
+              }, 2000);
+            } catch (error) {
+              copyTooltip.textContent = "Could not copy to clipboard";
+              copyTooltip.classList.add("visible");
+            }
+          };
+
+          color.addEventListener("click", copyText);
+          color.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              copyText();
+            }
+          });
+        });
+    </script>
   </body>
 </html>
