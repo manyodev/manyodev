@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manyo | 마녀</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu&family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/gif" href="favicon.gif" />
+  </head>
+  <body>
+    <div class="header"></div>
+    <div class="navbar">
+      <a href="/">Projects</a>
+
+      <a href="academics">Academics</a>
+
+      <a href="stray-kids">Stray Kids</a>
+
+      <a href="about" class="active">About</a>
+    </div>
+    <main class="about">
+
+      <div class="callout">
+        <p class="highlight">
+          Manyo | 마녀
+          <button
+            id="pronounce-manyo"
+            type="button"
+            aria-label="Pronounce Manyo"
+          >
+            <i class="fa-solid fa-volume-off"></i>
+          </button>
+        </p>
+        <p>
+          My alias is inspired by my interest in Sailor Moon and K-pop. The
+          earliest magical girls were directly inspired by witches, and "Witch"
+          in Korean is "마녀" (Manyeo). My pfp is Chibiusa, aka Sailor Moon's
+          daughter.
+        </p>
+      </div>
+      <p>This is my personal site where I post whatever I want.</p>
+      <div class="socials">
+            <a href="https://github.com/manyodev" target="_blank"
+              ><img src="GitHub.gif" alt="GitHub"></a>
+
+              <a href="https://www.instagram.com/manyodev/" target="_blank"
+              ><img src="Instagram.gif" alt="GitHub"></a>
+              <a href="https://www.linkedin.com/in/manyodev/" target="_blank"
+              ><img src="linkedin.gif" alt="GitHub"></a>
+          </div>
+      <div class="pallete">
+        <div
+          class="color pfp"
+          data-copy="manyodev@outlook.com"
+          role="button"
+          tabindex="0"
+          aria-label="Copy email"
+        ></div>
+        <div
+          class="color text"
+          data-copy="#ffffff"
+          role="button"
+          tabindex="0"
+          aria-label="Copy text color #ffffff"
+        >
+          <div class="color-name">Text</div>
+          <div class="color-code">#ffffff</div>
+        </div>
+        <div
+          class="color background"
+          data-copy="#000000"
+          role="button"
+          tabindex="0"
+          aria-label="Copy background color #000000"
+        >
+          <div class="color-name">Background</div>
+          <div class="color-code">#000000</div>
+        </div>
+        <div
+          class="color primary"
+          data-copy="#f4cddd"
+          role="button"
+          tabindex="0"
+          aria-label="Copy primary color #f4cddd"
+        >
+          <div class="color-name">Primary</div>
+          <div class="color-code">#f4cddd</div>
+        </div>
+        <div
+          class="color secondary"
+          data-copy="#bba0bb"
+          role="button"
+          tabindex="0"
+          aria-label="Copy secondary color #bba0bb"
+        >
+          <div class="color-name">Secondary</div>
+          <div class="color-code">#bba0bb</div>
+        </div>
+        <div
+          class="color accent"
+          data-copy="#be93a4"
+          role="button"
+          tabindex="0"
+          aria-label="Copy accent color #be93a4"
+        >
+          <div class="color-name">Accent</div>
+          <div class="color-code">#be93a4</div>
+        </div>
+      </div>
+      <div id="copy-tooltip" role="status" aria-live="polite"></div>
+    </main>
+    <script>
+      const copyTooltip = document.querySelector("#copy-tooltip");
+      let tooltipTimeout;
+
+      document
+        .querySelectorAll(".pallete .color[data-copy]")
+        .forEach((color) => {
+          const copyText = async () => {
+            try {
+              await navigator.clipboard.writeText(color.dataset.copy);
+              copyTooltip.textContent = `Copied ${color.dataset.copy} to clipboard!`;
+              copyTooltip.classList.add("visible");
+              clearTimeout(tooltipTimeout);
+              tooltipTimeout = setTimeout(() => {
+                copyTooltip.classList.remove("visible");
+              }, 2000);
+            } catch (error) {
+              copyTooltip.textContent = "Could not copy to clipboard";
+              copyTooltip.classList.add("visible");
+            }
+          };
+
+          color.addEventListener("click", copyText);
+          color.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              copyText();
+            }
+          });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en" class="overflow-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Stray Kids</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu&family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/gif" href="favicon.gif" />
+  </head>
+  <body>
+    <div class="header"></div>
+    <div class="navbar">
+      <a href="/">Projects</a>
+
+      <a href="academics">Academics</a>
+
+      <a href="stray-kids" class="active">Stray Kids</a>
+      
+      <a href="about">About</a>
+    </div>
+    <main class="skz">
+      <div class="window">
+        <div class="window-header">
+          <div class="window-text">Stray Kids</div>
+          <button class="window-button"><i class="fa-solid fa-heart"></i></button>
+        </div>
+        <div class="window-content">
+          <p>My Favorite Artists</p>
+          <div class="window-image eighth-skz"></div>
+          <table>
+            <tr>
+              <th>Name</th>
+              <td>Stray Kids | 스트레이 키즈</td>
+            </tr>
+            <tr>
+              <th>aka</th>
+              <td>SKZ | 스키즈</td>
+            </tr>
+            <tr>
+              <th>Debut</th>
+              <td>March 2018</td>
+            </tr>
+            <tr>
+              <th>Fandom</th>
+              <td>STAY | 스테이</td>
+            </tr>
+        <tr>
+              <th>Funfact</th>
+              <td>They're self-produced!</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="window">
+        <div class="window-header">
+          <div class="window-text">Stray Kids "RUN IT" M/V</div>
+          <button class="window-button"><i class="fa-solid fa-heart"></i></button>
+        </div>
+        <div class="window-content">
+          <video id="player" autoplay muted loop>
+            <source src="skz-run-it.mp4" type="video/mp4"></source>
+              <track 
+    src="skz-run-it.vtt" 
+    kind="captions" 
+    srclang="en" 
+    label="English" 
+    default>
+
+            Your browser does not support the video tag.
+          </video>
+          <div class="player-controls">
+            <button id="play-pause" class="window-button" type="button" aria-label="Pause video"><i class="fa-solid fa-pause"></i></button>
+            <button id="volume-mute" class="window-button" type="button" aria-label="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+            <button id="volume-down" class="window-button" type="button"><i class="fa-solid fa-minus"></i></button>
+            <button id="volume-up" class="window-button" type="button"><i class="fa-solid fa-plus"></i></button>
+            <button id="caption-toggle" class="window-button" type="button" aria-label="Turn captions off"><i class="fa-solid fa-closed-captioning"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="window">
+        <div class="window-header">
+          <div class="window-text">Run It Tour NA 2027</div>
+          <button class="window-button"><i class="fa-solid fa-heart"></i></button>
+        </div>
+        <div class="window-content">
+          <div class="window-image cute-skz"></div>
+          <table>
+            <tr>
+              <th>Date</th>
+              <td>June 14th, 2027</td>
+            </tr>
+            <tr>
+              <th>Location</th>
+              <td>Orlando, FL</td>
+            </tr>
+            <tr>
+              <th>Venue</th>
+              <td>Camping World Stadium</td>
+            </tr>
+            <tr>
+              <th>Time</th>
+              <td>7:30 PM</td>
+            </tr>
+            <tr>
+              <th>Tickets</th>
+              <td><i class="fa-solid fa-triangle-exclamation"></i> Unsecured! </td>
+            </tr>
+            <tr>
+              <th>Countdown</th>
+              <td><span id="countdown">...</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+           <div class="window">
+        <div class="window-header">
+          <div class="window-text">Stray Kids Exclusive Billboard Interview</div>
+          <button class="window-button"><i class="fa-solid fa-heart"></i></button>
+        </div>
+        <div class="window-content">
+<div id="ytplayer"></div>          <div class="player-controls">
+            <button id="yt-play-pause" class="window-button" type="button" aria-label="Pause video"><i class="fa-solid fa-pause"></i></button>
+            <button id="yt-volume-mute" class="window-button" type="button" aria-label="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+            <button id="yt-volume-down" class="window-button" type="button"><i class="fa-solid fa-minus"></i></button>
+            <button id="yt-volume-up" class="window-button" type="button"><i class="fa-solid fa-plus"></i></button>
+          </div>
+        </div>
+      </div>      <div class="window">
+        <div class="window-header">
+          <div class="window-text">Run It Tour SETLIST</div>
+          <button class="window-button"><i class="fa-solid fa-heart"></i></button>
+        </div>
+        <div class="window-content">
+          <div class="window-image cool-skz">
+          </div>TBD
+          <i class="fa-solid fa-hammer"></i> 
+        </div>
+      </div>
+      <div class="skz-dock"><a href="https://www.youtube.com/channel/UC9rMiEjNaCSsebs31MRDCRA" target="_blank"><i class="fa-brands fa-youtube"></i></a></i><p>Hint: you can drag windows</p></div>
+    </main>
+  </body>
+</html>

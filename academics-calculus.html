@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academics</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu&family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.mermaid) {
+          mermaid.initialize({ startOnLoad: true });
+        }
+      });
+    </script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js">
+  </script>
+
+    <link rel="icon" type="image/gif" href="favicon.gif" />
+  </head>
+  <body>
+    <div class="header"></div>
+    <div class="navbar">
+      <a href="/">Projects</a>
+      <a href="academics" class="active">Academics</a>
+
+      <a href="stray-kids">Stray Kids</a>
+      
+      <a href="about">About</a>
+    </div>
+    <main class="calculus">      <a href="academics" class="back-button"><i class="fa-solid fas fa-long-arrow-alt-left"></i>Academics</a><h2>Calculus</h2>
+      <div class="two-col">
+        <div><h4>Prerequisites</h4>
+      <pre class="mermaid">
+---
+config:
+  look: base
+  theme: base
+  themeVariables:
+    primaryColor: "#FAE9F1"
+    primaryTextColor: "#000000"
+    primaryBorderColor: "#be93a4"
+    lineColor: "#be93a4"
+    fontSize: "16px"
+---
+graph LR
+  Algebra --> Calculus
+  Geometry --> Calculus
+  Trigonometry --> Calculus
+    </pre
+      ></div>
+        <div><h4>Resources</h4>
+        <div class="callout">
+          <ul>
+            <li><i class="fa-solid fas fa-book"></i> Calculus Early Transcendentals | 9th Edition</li>
+            <li><i class="fa-solid fab fa-youtube"></i> Organic Chemistry Tutor</li>
+          </ul>
+        </div>
+      </div></div>
+         <!--   
+      <h3>What is Calculus?</h3>
+      <p>Put simply, Calculus is the study of change over time.</p>
+      <p>
+        More specifically, Calculus is the study of how quantities change over
+        time and/or in relation to each other.
+      </p>
+      <img src="3racha-gif.gif" alt="3racha"></img>
+      <p>
+        This relationship between a quantity and time (or another quantity) is
+        also known as <b>rate of change.</b>
+      </p>
+      <p>Examples:</p>
+      <table class="planner-table">
+        <tr>
+          <th>Casual Terms</th>
+          <th>Calculus Terms</th>
+        </tr>
+        <tr>
+          <td>How quickly spilled milk spreads</td>
+          <td>Rate at which the circumference of a circle expands</td>
+        </tr>
+        <tr>
+          <td>How fast a balloon deflates</td>
+          <td>Rate at which the volume of a sphere decreases</td>
+        </tr>
+        <tr>
+          <td>
+            If a car is going 10mph how many hours would it take to travel 80
+            miles?
+          </td>
+          <td>
+            At a rate of 10mph what is the time it takes to travel the length of
+            80miles?
+          </td>
+        </tr>
+      </table>
+
+
+      <h2>Functions</h2>
+      <h3>What is a function?</h3>
+      <p>
+        Functions are the fundamental building blocks of calculus. They arise
+        whenever one quantity depends on another. And they can be used to define
+        an equation for a rate of change.
+      </p>
+      <h3>How can functions be represented?</h3>
+      <table>
+        <tr>
+          <th>Equation</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Table</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Graph</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Words</th>
+          <td></td>
+        </tr>
+      </table> <h1>...</h1>
+      !-->
+     
+      <h2>Optimization</h2>
+      <div class="callout"><p><span class="highlight">Optimization</span></p>The practical application of derivatives to find the optimal—meaning the <b>absolute maximum</b> or <b>absolute minimum</b>—value of a given real-world or geometric quantity.</div>
+      <p>To optimize a quantity \(Q\) it must be expressed as a continuous function \(Q\ = f(x)\) on a valid physical domain. The optimal result is found at either a <b>critical number</b> (where \(f'(x) = 0\) or \(f'(x)\) is undefined) or at an <b>endpoint</b> of the domain.</p>
+      <p>
+  \(d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\)
+</p>
+<p>
+  <ul>
+    <li>If \(f'(x) > 0\) for all \(x < c\) and \(f'(x) < 0\) for all \(x > c\), then \(f(c)\) is the absolute maximum value of \(f\) on the interval. </li>
+    <li>If \(f'(x) < 0\) for all \(x < c\) and \(f'(x) > 0\) for all \(x > c\), then \(f(c)\) is the absolute minimum value of \(f\) on the interval.   </li>
+  </ul>
+</p>
+<h2>Mean Value Theorem</h2>
+<div class="callout">
+  <p class="highlight">Rolle's Theorem</p>
+  <p>Let \(f\) be a function that satisfies the following three hypotheses:</p>
+  <ol>
+    <li>\(f\) is continuous on the closed interval \([a,b]\)
+    </li>
+    <li>\(f\) is differentiable on the open interval \((a,b)\)</li>
+    <li>\(f(a)=f(b)\)</li>
+  </ol>
+  <p>Then there is a number \(c\) in \((a,b)\) such that \(f'(c)=0\)</p>
+</div>
+<div class="callout">
+  <p class="highlight">Mean Value Theorem</p>
+  <p>Let \(f\) be a function that satisfies the following:</p>
+  <ol>
+    <li>\(f\) is continuous on the closed interval \([a,b]\)
+    </li>
+    <li>\(f\) is differentiable on the open interval \((a,b)\)</li>
+  </ol>
+  <p>Then there is a number \(c\) in \((a,b)\) such that</p>
+  <p>\(f'(c)={f(b)-f(a) \over b - a}\)</p> 
+  <p>or, equivalently,</p>  
+  <p>\(f(b)-f(a)=f'(c)(b-a)\)</p>  
+</div>
+<h2>Antiderivatives</h2>
+<div class="callout"><p>A function \(F\) is called an <span class="highlight">antiderivative</span> of \(f\) on an interval \(I\) if \(F'(x )=f(x)\) for all \(x\) in \(I\).</p></div>
+<h2>Area & Distance Problems</h2>
+<h2>The Definite Integral</h2>
+<h2>The Fundamental Theorem of Calculus</h2>
+<h2>Indefinite Integrals and the Net Change Theorem</h2>
+<h2>The Substitution Rule</h2>
+    </main>
+  </body>
+</html>
