@@ -108,7 +108,7 @@ small {
   top: 0;
 }
 .navbar a {
-  color: var(--text);
+  color: var(--text) !important;
   background-color: var(--background);
   text-decoration: none;
   height: 100%;
